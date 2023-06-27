@@ -2,7 +2,7 @@ console.log("Let's get this party started!");
 
 
 async function getGIF(searchGIF){
-    let res = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${searchGIF}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`)
+    let res = await axios.get(`https://api.giphy.com/v1/gifs/search?q=${searchGIF}&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym`)
     let gifData = res.data.data
     let num = Math.floor(Math.random() * 50)
     let gif = gifData[num]
